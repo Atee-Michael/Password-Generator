@@ -1,5 +1,7 @@
-// Array of special characters to be included in password
-var specialCharacters = [
+// Definition of variables for password
+
+  // Array of special characters to be included in password
+let specialCharacters = [
   '@',
   '%',
   '+',
@@ -25,11 +27,11 @@ var specialCharacters = [
   '.'
 ];
 
-// Array of numeric characters to be included in password
-var numericCharacters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  // Array of numeric characters to be included in password
+let numericCharacters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
-// Array of lowercase characters to be included in password
-var lowerCasedCharacters = [
+  // Array of lowercase characters to be included in password
+let lowerCasedCharacters = [
   'a',
   'b',
   'c',
@@ -58,8 +60,8 @@ var lowerCasedCharacters = [
   'z'
 ];
 
-// Array of uppercase characters to be included in password
-var upperCasedCharacters = [
+  // Array of uppercase characters to be included in password
+let upperCasedCharacters = [
   'A',
   'B',
   'C',
@@ -88,6 +90,9 @@ var upperCasedCharacters = [
   'Z'
 ];
 
+
+
+
 // Function to prompt user for password options
 function getPasswordOptions() {
 
@@ -104,12 +109,12 @@ function generatePassword() {
 }
 
 // Get references to the #generate element
-var generateBtn = document.querySelector('#generate');
+let generateBtn = document.querySelector('#generate');
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector('#password');
+  let password = generatePassword();
+  let passwordText = document.querySelector('#password');
 
   passwordText.value = password;
 }
