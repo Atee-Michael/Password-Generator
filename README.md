@@ -5,8 +5,13 @@ This project generates a password based on user-selected criteria using JavaScri
 The password must meet the following criteria:
 
 * Length: At least 8 characters but no more than 128.
+![alt text](./IMG/prompt%201.jpg)
+
 * Character types: Lowercase, Uppercase, Numeric, Special characters ($@%&*, etc.)
+![alt text](./IMG/prompt%202.jpg)
+
 * Code should validate for each input and at least one character type should be selected.
+![alt text](./IMG/prompt%203.jpg)
 
 ## Usage
 * Open the index.html file in your web browser.
