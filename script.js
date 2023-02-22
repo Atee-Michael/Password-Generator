@@ -1,29 +1,12 @@
-// Definition of variables for password
+// Get references to the elements
+const generateBtn = document.getElementById("generate");
+const passwordEl = document.getElementById("password");
 
-  // Array of special characters to be included in password
-let specialCharacters = ['@', '%', '+', '\\', '/', "'", '!', '#', '$', '^', '?', ':', ',', ')', '(', '}', '{', ']', '[', '~', '-', '_', '.'];
-
-  // Array of numeric characters to be included in password
-let numericCharacters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-
-  // Array of lowercase characters to be included in password
-let lowerCasedCharacters = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-
-  // Array of uppercase characters to be included in password
-let upperCasedCharacters = [ 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-
-let possibleCharacters = [...lowerCasedCharacters, ...upperCasedCharacters, ...numericCharacters, ...specialCharacters];
-console.log(possibleCharacters)
-
-// Function to prompt user for password options
-function getPasswordOptions() {
-  let lengthOfPassword = prompt("Enter your password: Please choose between 10 and 64 characters");
-
-// Check that the password is at least 10 characters but no more than 64
-if (lengthOfPassword.length < 10 || lengthOfPassword.length > 64);
-  return ("Error: Password should not exceed 64 characters but should be at least 10 characters long");
-
-}
+// Sets for password criteria
+const lowerCaseChars = "abcdefghijklmnopqrstuvwxyz";
+const upperCaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const numericChars = "0123456789";
+const specialChars = "$@%&*()_+-=[]{}|<>?,.";
 
 
 
